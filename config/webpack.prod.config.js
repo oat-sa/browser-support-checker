@@ -7,8 +7,7 @@ const glob = require('glob');
 
 const rootPath = path.resolve(__dirname, '..');
 const srcDir = path.resolve(rootPath, 'src');
-console.log(rootPath);
-console.log(srcDir)
+
 const entryArray = glob.sync(path.join(srcDir, '**', '*.js'));
 const entryObject = entryArray.reduce((acc, item) => {
     const name = path.relative(srcDir, item);
@@ -22,8 +21,6 @@ const entryObject = entryArray.reduce((acc, item) => {
 const externals = {
     yamlparser: true
 };
-console.log(entryObject);
-console.log(entryArray);
 
 module.exports = merge(loaders, {
     mode: 'production',
