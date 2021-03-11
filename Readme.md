@@ -20,9 +20,11 @@ Available scripts in the project:
 
 ```
 Version: webpack 4.46.0
-Time: 5838ms
-Built at: 02/26/2021 5:41:29 PM
-       Asset     Size  Chunks                   Chunk Names
-    index.js  208 KiB       0  [emitted]        index.js
-index.js.map  463 KiB       0  [emitted] [dev]  index.js
+Time: 2812ms
+Built at: 03/11/2021 12:29:09 PM
+         Asset      Size  Chunks                   Chunk Names
+    checker.js  2.42 KiB    0, 1  [emitted]        checker.js
+checker.js.map  7.25 KiB    0, 1  [emitted] [dev]  checker.js
+      index.js  2.38 KiB       1  [emitted]        index.js
+  index.js.map  7.15 KiB       1  [emitted] [dev]  index.js
 ```
