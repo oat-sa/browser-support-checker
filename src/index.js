@@ -1,11 +1,16 @@
-const BrowserList = require('@oat-sa/browserslist-config-tao');
-const { getUserAgentRegExp } = require('browserslist-useragent-regexp');
+const supportedBrowsers = require('../supportedBrowsers');
 
-const options = { browsers: BrowserList };
-const isSupported = getUserAgentRegExp(options).test(navigator.userAgent);
-
-if (!isSupported) {
-    document.open();
-    document.write('<h1>Browser is not supported!</h1>');
-    document.close();
+module.exports = {
+    checkBrowser() {
+        return supportedBrowsers.test(navigator.userAgent);
+    },
+    displayMessage(message) {
+        document.open();
+        document.write(message);
+        document.close();
+    },
+    checkAndDisplay(unsupportedMessage = '<h1>Browser is not supported!</h1>') {
+        const isSupported = this.checkBrowser();
+        if (!isSupported) this.displayMessage(unsupportedMessage);
+    }
 }
