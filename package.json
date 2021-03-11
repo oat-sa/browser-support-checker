@@ -4,6 +4,7 @@
   "description": "Lightweight browser support checker",
   "main": "src/index.js",
   "scripts": {
+    "supportedBrowsers": "node regenerate.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "npm run build",
     "build": "webpack --config ./config/webpack.prod.config.js",
@@ -19,7 +20,6 @@
   "license": "ISC",
   "dependencies": {
     "@oat-sa/browserslist-config-tao": "^0.3.0",
-    "browserslist-useragent": "^3.0.3",
     "browserslist-useragent-regexp": "^3.0.0"
   },
   "devDependencies": {
@@ -33,13 +33,7 @@
     "css-loader": "^3.2.0",
     "eslint": "^4.19.1",
     "glob": "^7.1.4",
-    "handlebars-loader": "^1.7.1",
-    "json-loader": "^0.5.7",
-    "node-sass": "^4.12.0",
-    "qunit": "^2.9.2",
-    "sass-loader": "^8.0.0",
     "source-map-loader": "^0.2.4",
-    "style-loader": "^1.0.0",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.1",
