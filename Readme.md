@@ -15,6 +15,7 @@ Available scripts in the project:
 
 - `npm run build`: build for production into `dist` directory
 - `npm run build:watch`: build for production into `dist` directory and watch for changes
+- `npm run supportedBrowsers`: build supportedBrowsers.js(browser versions RegExp) into root directory
 
 ### Bundle size
 
