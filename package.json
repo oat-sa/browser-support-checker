@@ -1,5 +1,5 @@
 {
-  "name": "browser-support-checker",
+  "name": "@oat-sa/browser-support-checker",
   "version": "1.0.0",
   "description": "Lightweight browser support checker",
   "main": "src/index.js",
