@@ -15,13 +15,6 @@ const entryObject = entryArray.reduce((acc, item) => {
     return acc;
 }, {});
 
-/**
- * Define all modules as external, so rollup won't bundle them together.
- */
-const externals = {
-    yamlparser: true
-};
-
 module.exports = merge(loaders, {
     mode: 'production',
     entry: entryObject,
@@ -32,11 +25,5 @@ module.exports = merge(loaders, {
         libraryTarget: 'umd'
     },
     devtool: 'source-map',
-    externals,
-    node: {
-        fs: 'empty',
-        net: 'empty',
-        tls: 'empty'
-    },
     plugins: [new CleanWebpackPlugin()]
 });
