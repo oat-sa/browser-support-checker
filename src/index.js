@@ -1,4 +1,4 @@
-const supportedBrowsers = require('../supportedBrowsers');
+const supportedBrowsers = require('../supportedBrowsers.js');
 
 module.exports = {
     checkBrowser() {
