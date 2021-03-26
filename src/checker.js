@@ -15,8 +15,6 @@
  *
  * Copyright (c) 2021 (original work) Open Assessment Technologies SA;
  */
-document.onload(function() {
-    // Reset page content first
-    document.body.innerHTML = "";
+window.onload = function () {
     require('./index.js').checkAndDisplay();
-});
+}
