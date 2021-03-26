@@ -40,6 +40,11 @@ module.exports = {
      */
     checkAndDisplay(unsupportedMessage = '<h1>Browser is not supported!</h1>') {
         const isSupported = this.checkBrowser();
-        if (!isSupported) this.displayMessage(unsupportedMessage);
+        if (!isSupported) {
+            // Reset page content first
+            document.body.innerHTML = "";
+            // Display message
+            this.displayMessage(unsupportedMessage);
+        }
     }
 }
