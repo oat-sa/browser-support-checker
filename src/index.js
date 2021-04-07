@@ -42,9 +42,9 @@ module.exports = {
         const isSupported = this.checkBrowser();
         if (!isSupported) {
             // Reset page content first
-            document.body.innerHTML = "";
+            document.body.innerHTML = '';
             // Display message
             this.displayMessage(unsupportedMessage);
         }
     }
-}
+};
