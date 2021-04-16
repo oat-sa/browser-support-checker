@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Lightweight browser support checker",
   "main": "src/index.js",
+  "browser": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "supportedBrowsers.js"
+  ],
   "scripts": {
     "update:browsers": "node regenerate.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,20 +22,18 @@
     "check",
     "lightweight"
   ],
- "author": {
+  "author": {
     "name": "OAT SA",
     "url": "https://taotesting.com"
   },
   "license": "GPL-2.0-only",
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
-    "@oat-sa/eslint-config-tao": "^0.1.2",
-    "@oat-sa/prettier-config": "^0.1.1",
-    "babel-eslint": "^8.2.6",
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@oat-sa/eslint-config-tao": "^1.1.1",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
-    "eslint": "^4.19.1",
+    "eslint": "^7.24.0",
     "glob": "^7.1.4",
     "source-map-loader": "^0.2.4",
     "webpack": "^4.41.0",
