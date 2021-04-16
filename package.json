@@ -16,8 +16,11 @@
     "check",
     "lightweight"
   ],
-  "author": "Ivan Katkov <ivan.katkov@taotesting.com>",
-  "license": "ISC",
+ "author": {
+    "name": "OAT SA",
+    "url": "https://taotesting.com"
+  },
+  "license": "GPL-2.0-only",
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
