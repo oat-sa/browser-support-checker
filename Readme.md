@@ -1,22 +1,19 @@
 # browser-support-checker
 Lightweight browser support checker
 
-## Install
-
-### For Development
-```
-git clone https://github.com/vanya6537/browser-checker-tao
-cd browser-checker-tao 
-npm install
-```
-After `npm install` production version builds to dist directory automatically
-### For using as npm package
+### Usage as npm package
 `npm i --save @oat-sa/browser-support-checker`
 ### For using as script tag
 `<script src="./dist/checker.js"></script>`
 There can be  `src` link pointing to minified version of checker.js
-###
+
 ## Development
+```
+git clone https://github.com/vanya6537/browser-checker-tao
+cd browser-checker-tao 
+npm ci
+```
+After `npm ci` production version builds to dist directory automatically
 
 Available scripts in the project:
 
@@ -24,7 +21,7 @@ Available scripts in the project:
 - `npm run build:watch`: build for production into `dist` directory and watch for changes
 - `npm run supportedBrowsers`: build supportedBrowsers.js(browser versions RegExp) into root directory
 
-### Bundle size
+## Bundle size
 
 ```
 Version: webpack 4.46.0
