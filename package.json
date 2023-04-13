@@ -1,6 +1,6 @@
 {
   "name": "@oat-sa/browser-support-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight browser support checker",
   "main": "src/index.js",
   "browser": "dist/index.js",
@@ -48,5 +48,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oat-sa/browser-support-checker.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/oat-sa/browser-support-checker/issues"
+  },
+  "homepage": "https://github.com/oat-sa/browser-support-checker#readme"
 }
